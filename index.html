@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'am<br><span>Rahul</span> Badachi </h1>
+            </div>
+        </div>
+    </div>
+
+<!-- --------------About Section----------------  -->
+    <div id="about">    
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Ambitious Computer Science graduate with a strong foundation in Java and web technologies, eager to contribute to innovative software solutions as a Software Developer. Passionate about leveraging technical skills in a dynamic team and committed to continuous learning and professional growth.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages:</span><br>Java</li>
+                            <li><span>Web Development:</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>Database:</span><br>MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Banking Application:</span><br>Tech Stack: Java, JDBC, Servlets, MySQL</li>
+                            <li><span>My To-Do List Web App:</span><br>Tech Stack: HTML, CSS, JavaScript</li>
+                            <li><span>Amazon Clone:</span><br>Tech Stack: HTML, CSS</li>
+                            <li><span>Skin Disease Detection:</span><br>Tech Stack: Python, Django, HTML, CSS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>BE in CSE from AITM, Belagavi</li>
+                            <li><span>2020</span><br>Class 12 from Gnyan Gangotri, Jamkhandi</li>
+                            <li><span>2018:</span><br>SSLC from Govt P.B.High School, Jamkhandi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- --------------Projects Section----------------  -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title1">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/e-commerce.jpg" alt="e-commerce">
+                    <div class="layer">
+                        <h3>Amazon Clone</h3>
+                        <p>The Amazon Clone is a front-end web app developed using HTML and CSS, replicating Amazon’s layout for a responsive user experience.</p>
+                        <a href="https://amazon-clone-pi-orpin.vercel.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/to-do.jpg" alt="to-do">
+                    <div class="layer">
+                        <h3>To-Do Application</h3>
+                        <p>The To-Do Application is a task manager built with HTML, CSS, and JavaScript, allowing users to add and delete tasks efficiently.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/bank.jpg" alt="bank">
+                    <div class="layer">
+                        <h3>Banking Application</h3>
+                        <p>The Banking Application is a secure platform using Java, Servlets, HTML, CSS, and MySQL for managing accounts, transactions, and payments.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button id="showMoreBtn">Show more</button>
+                
+                <div id="moreContent">
+                    <div class="work">
+                        <img src="images/js_proj.png" alt="js_proj">
+                        <div class="layer">
+                            <h3>JS Projects</h3>
+                            <p>This project includes Color Changer, BMI Calculator, Digital Clock, and Guess the Number, built with HTML, CSS, and JavaScript.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <button id="showLessBtn">Show less</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!-- --------------Contact Section----------------  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1> 
+                    <p><i class="fa-solid fa-paper-plane"></i> rahulsbadachi052@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 6363907464</p>
+                    <div class="sm-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+                    </div>
+                    <a href="images/Rahul_Badachi_Resume.pdf" download class="Btn">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Meassage" required></textarea>
+                        <button type="submit" class="Btn Btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Rahul. Made with <i class="fa-solid fa-heart"></i> by Rahul</p>
+        </div>
+    </div>
+    
+
+
+    <script src="logic.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
