@@ -12,6 +12,7 @@ function opentab(tabname) {
     document.getElementById(tabname).classList.add("active-tab"); 
 }
 
+// --------------------JS Logic for Show More and Show Less--------------------//
 
 const showMoreBtn = document.getElementById("showMoreBtn");
 const moreContent = document.getElementById("moreContent");
@@ -26,3 +27,15 @@ showLessBtn.addEventListener("click", function() {
     moreContent.style.display = "none";
     showMoreBtn.style.display = "block";
 })
+
+
+// --------------------JS Logic responsiveness--------------------//
+const sidemenu = document.getElementById("sidemenu");
+
+function openMenu() {
+    sidemenu.style.right = "0";
+}
+
+function closeMenu() {
+    sidemenu.style.right = "-200px";
+}
