@@ -9,7 +9,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     background: #080808;
     color: #fff;
@@ -256,7 +255,6 @@ nav ul li a:hover:after {
     border-radius: 5px;
     margin-top: 20px;
     transition: all 0.5s ease;
-
 }
 
 #showMoreBtn:hover, #showLessBtn:hover {

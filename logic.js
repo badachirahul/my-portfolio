@@ -21,6 +21,8 @@ const showLessBtn = document.getElementById("showLessBtn");
 showMoreBtn.addEventListener("click" , function() {
     moreContent.style.display = "block";
     showMoreBtn.style.display = "none"; 
+    moreContent.style.transform = "scaleY(1)";
+
 });
 
 showLessBtn.addEventListener("click", function() {
